@@ -89,16 +89,12 @@
     border-radius: var(--tridactyl-border-radius) !important;
     color: var(--ayuTextNormal);
     font-size: 1.0rem;
+    width: 98%;
+    padding: 1rem;
 }
 
 :root #tridactyl-colon::before {
     content: "";
-}
-
-:root #tridactyl-input {
-    width: 98%;
-    padding: 1rem;
-    /* background: none; */
 }
 
 :root #completions table {
