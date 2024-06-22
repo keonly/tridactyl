@@ -32,9 +32,9 @@
     --tridactyl-bg: var(--ayuBackground);
     --tridactyl-fg: var(--ayuTextNormal);
     --tridactyl-border-radius: 4px;
-    --tridactyl-cmdl-font-size: 1.85rem;
+    --tridactyl-cmdl-font-size: 1.5rem;
     --tridactyl-cmdl-bg: var(--ayuBackground);
-    --tridactyl-cmplt-option-height: 1.9em;
+    --tridactyl-cmplt-option-height: 1.5em;
 
     --tridactyl-header-font-size: 1.25rem;
     --tridactyl-header-font-weight: 700;
