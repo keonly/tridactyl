@@ -1,0 +1,230 @@
+/*
+ * Forked from AyuDark
+ * AyuDark: v0.2 (https://github.com/tridactyl/tridactyl/discussions/4621)
+ * Gist: https://gist.github.com/WirlyWirly/e875ec0a38728d496867e0a9c6ee968c
+ */
+
+
+
+@font-face {
+  font-family: 'JetBrains Mono', monospace;
+  font-style: normal;
+  font-weight: 400;
+  /* font-display: swap; */
+  /* src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7DQ.woff2) format('woff2'); */
+  src: url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+  /* unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; */
+}
+
+:root {
+    /* AyuDark Color Palette */
+    --ayuTextNormal: #e6e1cf;
+    --ayuTextComment: #6F7C89;
+    --ayuBackground: #161616;
+    --ayuSelection: #89b4fa;
+    --ayuBlue: #89b4fa;
+    --ayuOrange: #fab387;
+    --ayuGreen: #a6e3a1;
+    --ayuPurple: #cba6f7;
+
+    /* Ex-Command Line */
+    --tridactyl-font-family: 'JetBrains Mono', monospace;
+    --tridactyl-bg: var(--ayuBackground);
+    --tridactyl-fg: var(--ayuTextNormal);
+    --tridactyl-border-radius: 4px;
+    --tridactyl-cmdl-font-size: 1.85rem;
+    --tridactyl-cmdl-bg: var(--ayuBackground);
+    --tridactyl-cmplt-option-height: 1.9em;
+
+    --tridactyl-header-font-size: 1.25rem;
+    --tridactyl-header-font-weight: 700;
+
+    /* Ex-Command Tab options */
+    --tridactyl-of-fg: var(--ayuTextNormal);
+    --tridactyl-of-bg: var(--ayuSelection);
+    --tridactyl-url-fg: var(--ayuBlue);
+    --tridactyl-url-bg: none;
+
+    /* Mode indicator */
+    --tridactyl-status-fg: var(--ayuGreen);
+    --tridactyl-status-font-size: 14px;
+    --tridactyl-status-font-family: var(--tridactyl-font-family);
+    --tridactyl-status-font-bg: var(--ayuBackground);
+    --tridactyl-status-border: 2px solid var(--ayuSelection);
+    --tridactyl-status-border-radius: 4px;
+
+    /* Hint Characters */
+    --tridactyl-hintspan-fg: var(--ayuBackground);
+    --tridactyl-hintspan-bg: none;
+
+    /* Hint Element Highlights */
+    --tridactyl-hint-active-fg: none;
+    --tridactyl-hint-active-bg: none;
+    --tridactyl-hint-active-outline: none;
+    --tridactyl-hint-bg: none;
+    --tridactyl-hint-outline: none;
+}
+
+:root.TridactylOwnNamespace {
+    scrollbar-width: thin;
+}
+
+:root.TridactylOwnNamespace a {
+    color: var(--ayuBlue);
+}
+
+:root.TridactylOwnNamespace code {
+    color: var(--ayuTextNormal);
+    background-color: var(--ayuSelection);
+    padding: 3px 7px;
+}
+
+:root #command-line-holder {
+    order: 1;
+}
+
+:root #command-line-holder,
+:root #tridactyl-input {
+    font-family: var(--tridactyl-font-family);
+    border-radius: var(--tridactyl-border-radius) !important;
+    color: var(--ayuTextNormal);
+    font-size; 2.0rem;
+}
+
+:root #tridactyl-colon::before {
+    content: "";
+}
+
+:root #tridactyl-input {
+    width: 98%;
+    padding: 1rem;
+    background: none;
+}
+
+:root #completions table {
+    font-weight: 200;
+    table-layout: fixed;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+:root #completions > div {
+    max-height: calc(20 * var(--tridactyl-cmplt-option-height));
+    min-height: calc(10 * var(--tridactyl-cmplt-option-height));
+}
+
+
+:root #completions {
+    border: none !important;
+    font-family: var(--tridactyl-font-family);
+    order: 2;
+    margin-top: 10px;
+    border-radius: var(--tridactyl-border-radius);
+}
+
+
+
+:root #completions .HistoryCompletionSource table {
+    width: 100%;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+:root #completions .BufferCompletionSource table {
+    width: unset;
+    font-size: unset;
+    border-spacing: unset;
+    table-layout: unset;
+}
+
+:root #completions table tr .title {
+    width: 50%;
+}
+
+:root #completions tr .documentation {
+    white-space: nowrap;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+
+:root #completions .sectionHeader {
+    background: transparent;
+    padding: 1rem 1rem 0.4rem !important;
+    color: var(--ayuGreen);
+    font-family: var(--tridactyl-font-family);
+}
+
+:root #cmdline_iframe {
+    position: fixed !important;
+    bottom: unset;
+    top: 25% !important;
+    z-index: 2147483647 !important;
+    left: 10% !important;
+    width: 80% !important;
+    filter: drop-shadow(0px 0px 10px rgb(12, 16, 23)) !important;
+    color-scheme: only light; /* Prevent Firefox from adding a white background on dark-mode sites */
+}
+
+:root .TridactylStatusIndicator {
+    font-family: var(--tridactyl-font-family) !important;
+    position: fixed !important;
+    bottom: 10px !important;
+    right: 10px !important;
+    font-weight: 700 !important;
+    padding: 5px !important;
+}
+
+:root #completions tr.option {
+    color: var(--ayuTextNormal);
+    font-size: 1.05rem;
+}
+
+:root #completions tr.SettingsCompletionOption.option > td.title {
+    width: 20%;
+}
+
+:root #completions td.excmd,
+:root #completions td.name,
+:root #completions td.value,
+:root #completions td.title {
+    /* Ex: Table cell types to display as orange */
+    color: var(--ayuOrange);
+}
+
+:root #completions tr.BindingsCompletionOption.option > td.type,
+:root #completions tr.TabHistoryCompletionOption.option > td.time,
+:root #completions tr.SettingsCompletionOption.option > td.type {
+    /* Ex: Table cell types to display as grey */
+    color: var(--ayuTextComment);
+}
+
+:root #completions tr.BindingsCompletionOption.option > td.content,
+:root #completions tr.SettingsCompletionOption.option > td.content {
+    /* Ex: Table cell types to display as purple */
+    color: var(--ayuPurple);
+}
+
+
+:root #completions tr.HistoryCompletionOption.option > td.title,
+:root #completions tr.BufferCompletionOption.option > td.title,
+:root #completions tr.BmarkCompletionOption.option > td.title,
+:root #completions tr.TabHistoryCompletionOption.option > td.title,
+:root #completions tr.FileSystemCompletionOption.option > td.value,
+:root #completions tr.BufferAllCompletionOption > td.title {
+    /* Ex: Normal Text Color for some submenus */
+    color: var(--ayuTextNormal);
+}
+
+:root span.TridactylHint {
+    font-size: 10px !important;
+    font-family: monospace !important;
+    font-weight: 800 !important;
+    line-height: 1.5 !important;
+    padding: 0px 2px 0px 2px !important;
+    border-radius: 3px !important;
+    border: 1px solid var(--ayuBackground) !important;
+    background: linear-gradient(var(--ayuGreen), #34d500) !important;
+    /* background: linear-gradient(var(--ayuPurple), #7E6399) !important; */
+    /* background: linear-gradient(var(--ayuBlue), #479BCC) !important; */
+    /* background: linear-gradient(#fcfd00, #fdb601) !important; */
+}
