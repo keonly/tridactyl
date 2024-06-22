@@ -98,7 +98,7 @@
 :root #tridactyl-input {
     width: 98%;
     padding: 1rem;
-    background: none;
+    /* background: none; */
 }
 
 :root #completions table {
