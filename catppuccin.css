@@ -88,7 +88,7 @@
     font-family: var(--tridactyl-font-family);
     border-radius: var(--tridactyl-border-radius) !important;
     color: var(--ayuTextNormal);
-    font-size; 1.0rem;
+    font-size: 1.0rem;
 }
 
 :root #tridactyl-colon::before {
@@ -102,7 +102,7 @@
 }
 
 :root #completions table {
-    font-weight: 200;
+    font-weight: 300;
     table-layout: fixed;
     padding: 1rem;
     padding-top: 0;
