@@ -90,7 +90,7 @@
     color: var(--ayuTextNormal);
     font-size: 1.0rem;
     width: 98%;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 :root #tridactyl-colon::before {
