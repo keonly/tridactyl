@@ -223,7 +223,7 @@
     padding: 0px 2px 0px 2px !important;
     border-radius: 3px !important;
     border: 1px solid var(--ayuBackground) !important;
-    background: linear-gradient(var(--ayuGreen), #34d500) !important;
+    background: var(--ayuBlue) !important;
     /* background: linear-gradient(var(--ayuPurple), #7E6399) !important; */
     /* background: linear-gradient(var(--ayuBlue), #479BCC) !important; */
     /* background: linear-gradient(#fcfd00, #fdb601) !important; */
