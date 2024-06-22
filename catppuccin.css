@@ -88,7 +88,7 @@
     font-family: var(--tridactyl-font-family);
     border-radius: var(--tridactyl-border-radius) !important;
     color: var(--ayuTextNormal);
-    font-size: 1.0rem;
+    font-size: 1.25rem;
     width: 98%;
     padding: 0.5rem;
 }
