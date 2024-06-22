@@ -102,6 +102,7 @@
     table-layout: fixed;
     padding: 1rem;
     padding-top: 0;
+    font-size: 1.0rem;
 }
 
 :root #completions > div {
