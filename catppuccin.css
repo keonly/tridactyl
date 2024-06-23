@@ -90,7 +90,8 @@
     border-radius: var(--tridactyl-border-radius) !important;
     color: var(--ayuTextNormal);
     font-size: 1.25rem;
-    width: 98%;
+    width: 100%;
+    /* width: 98%; */
     padding: 0.5rem;
     box-sizing: border-box;
 }
