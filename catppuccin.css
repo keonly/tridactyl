@@ -18,8 +18,8 @@
 
 :root {
     /* AyuDark Color Palette */
-    --ayuTextNormal: #e6e1cf;
-    --ayuTextComment: #6F7C89;
+    --ayuTextNormal: #f4f4f4;
+    --ayuTextComment: #f4f4f4;
     --ayuBackground: #161616;
     --ayuSelection: #89b4fa;
     --ayuBlue: #89b4fa;
@@ -105,7 +105,7 @@
 }
 
 :root #completions table {
-    font-weight: 300;
+    font-weight: 400;
     table-layout: fixed;
     padding: 1rem;
     padding-top: 0;
