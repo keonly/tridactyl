@@ -119,6 +119,7 @@
     order: 2;
     margin-top: 10px;
     border-radius: var(--tridactyl-border-radius);
+    box-sizing: border-box;
 }
 
 
