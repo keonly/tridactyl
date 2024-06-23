@@ -83,23 +83,17 @@
     order: 1;
 }
 
-:root #input-wrapper {
+:root #command-line-holder,
+:root #tridactyl-input {
     font-family: var(--tridactyl-font-family);
     border: 1px solid #f4f4f4 !important;
     border-radius: var(--tridactyl-border-radius) !important;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: var(--tridactyl-cmdl-bg); /* Ensure the background color is consistent */
-}
-
-:root #tridactyl-input {
-    border: none; /* Remove any additional borders */
     color: var(--ayuTextNormal);
     font-size: 1.25rem;
     width: 100%;
-    padding: 0.25rem;
+    /* width: 98%; */
+    /* padding: 0.5rem; */
     box-sizing: border-box;
-    background-color: var(--tridactyl-cmdl-bg); /* Ensure the background color is consistent */
 }
 
 :root #tridactyl-colon::before {
