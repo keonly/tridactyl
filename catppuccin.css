@@ -86,7 +86,7 @@
 :root #command-line-holder,
 :root #tridactyl-input {
     font-family: var(--tridactyl-font-family);
-    border: 4px solid #f4f4f4 !important;
+    border: 2px solid #f4f4f4 !important;
     border-radius: var(--tridactyl-border-radius) !important;
     color: var(--ayuTextNormal);
     font-size: 1.25rem;
@@ -112,7 +112,7 @@
 
 
 :root #completions {
-    border: 4px solid #f4f4f4 !important;
+    border: 2px solid #f4f4f4 !important;
     /* border: none !important; */
     font-family: var(--tridactyl-font-family);
     order: 2;
