@@ -86,11 +86,18 @@
 :root #command-line-holder,
 :root #tridactyl-input {
     font-family: var(--tridactyl-font-family);
+    border: 2px solid #f4f4f4 !important;
     border-radius: var(--tridactyl-border-radius) !important;
     color: var(--ayuTextNormal);
     font-size: 1.25rem;
-    width: 98%;
-    padding: 0.5rem;
+    width: 100%;
+    /* width: 98%; */
+    padding: 0.25rem;
+    box-sizing: border-box;
+}
+
+:root #tridactyl-input {
+    border: none !important;
 }
 
 :root #tridactyl-colon::before {
@@ -111,11 +118,13 @@
 
 
 :root #completions {
-    border: none !important;
+    border: 2px solid #f4f4f4 !important;
+    /* border: none !important; */
     font-family: var(--tridactyl-font-family);
     order: 2;
     margin-top: 10px;
     border-radius: var(--tridactyl-border-radius);
+    box-sizing: border-box;
 }
 
 
