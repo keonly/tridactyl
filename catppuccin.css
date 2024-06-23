@@ -111,7 +111,8 @@
 
 
 :root #completions {
-    border: none !important;
+    border: 1px solid #f4f4f4 !important;
+    /* border: none !important; */
     font-family: var(--tridactyl-font-family);
     order: 2;
     margin-top: 10px;
