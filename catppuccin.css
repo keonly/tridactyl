@@ -96,6 +96,10 @@
     box-sizing: border-box;
 }
 
+:root #tridactyl-input {
+    border: none !important;
+}
+
 :root #tridactyl-colon::before {
     content: "";
 }
