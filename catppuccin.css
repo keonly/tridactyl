@@ -79,11 +79,11 @@
     padding: 3px 7px;
 }
 
-:root #command-line-holder {
-    order: 1;
-}
+/* :root #command-line-holder { */
+/*     order: 1; */
+/* } */
 
-:root #command-line-holder,
+/* :root #command-line-holder, */
 :root #tridactyl-input {
     font-family: var(--tridactyl-font-family);
     border: 2px solid #f4f4f4 !important;
