@@ -183,6 +183,10 @@
     font-size: 1.05rem;
 }
 
+:root #completions tr.focused {
+    background-color: var(--ayuSelection) !important;
+}
+
 :root #completions tr.SettingsCompletionOption.option > td.title {
     width: 20%;
 }
