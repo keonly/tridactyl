@@ -226,8 +226,8 @@
     padding: 0px 2px 0px 2px !important;
     border-radius: 2px !important;
     border: 2px solid var(--ayuBackground) !important;
-    background: var(--ayuSelection) !important;
-    color: var(--ayuTextNormal) !important; /* Ensuring text is visible against the gray background */
+    background: var(--ayuTextNormal) !important;
+    color: var(--ayuSelection) !important; /* Ensuring text is visible against the gray background */
     /* background: linear-gradient(var(--ayuPurple), #7E6399) !important; */
     /* background: linear-gradient(var(--ayuBlue), #479BCC) !important; */
     /* background: linear-gradient(#fcfd00, #fdb601) !important; */
