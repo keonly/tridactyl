@@ -152,7 +152,7 @@
 :root #completions .sectionHeader {
     background: transparent;
     padding: 1rem 1rem 0.4rem !important;
-    color: var(--ayuGreen);
+    color: var(--ayuPurple);
     font-family: var(--tridactyl-font-family);
 }
 
@@ -191,7 +191,7 @@
 :root #completions td.value,
 :root #completions td.title {
     /* Ex: Table cell types to display as orange */
-    color: var(--ayuOrange);
+    color: var(--ayuBlue);
 }
 
 :root #completions tr.BindingsCompletionOption.option > td.type,
