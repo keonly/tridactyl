@@ -165,6 +165,7 @@
     width: 75% !important;
     filter: drop-shadow(0px 0px 10px rgb(12, 16, 23)) !important;
     color-scheme: only light; /* Prevent Firefox from adding a white background on dark-mode sites */
+    padding-bottom: 2px !important; /* Ensure bottom border is fully displayed */
 }
 
 :root .TridactylStatusIndicator {
