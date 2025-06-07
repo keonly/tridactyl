@@ -17,7 +17,7 @@
     /* AyuDark Color Palette */
     --ayuTextNormal: #f4f4f4;
     --ayuTextComment: #f4f4f4;
-    --ayuBackground: #161616;
+    --ayuBackground: #000000;
     --ayuSelection: #525252;
     --ayuBlue: #89b4fa;
     --ayuOrange: #fab387;
@@ -38,8 +38,8 @@
 
     /* Ex-Command Tab options */
     --tridactyl-of-fg: var(--ayuTextNormal);
-    --tridactyl-of-bg: var(--ayuSelection);
-    --tridactyl-url-fg: var(--ayuSelection);
+    --tridactyl-of-bg: var(--ayuBackground);
+    --tridactyl-url-fg: var(--ayuBackground);
     --tridactyl-url-bg: none;
 
     /* Mode indicator */
@@ -47,7 +47,7 @@
     --tridactyl-status-font-size: 14px;
     --tridactyl-status-font-family: var(--tridactyl-font-family);
     --tridactyl-status-font-bg: var(--ayuBackground);
-    --tridactyl-status-border: 2px solid var(--ayuSelection);
+    --tridactyl-status-border: 2px solid var(--ayuTextNormal);
     --tridactyl-status-border-radius: 4px;
 
     /* Hint Characters */
@@ -227,7 +227,7 @@
     border-radius: 2px !important;
     border: 2px solid var(--ayuBackground) !important;
     background: var(--ayuTextNormal) !important;
-    color: var(--ayuSelection) !important; /* Ensuring text is visible against the gray background */
+    color: var(--ayuBackground) !important; /* Ensuring text is visible against the gray background */
     /* background: linear-gradient(var(--ayuPurple), #7E6399) !important; */
     /* background: linear-gradient(var(--ayuBlue), #479BCC) !important; */
     /* background: linear-gradient(#fcfd00, #fdb601) !important; */
