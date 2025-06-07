@@ -224,7 +224,7 @@
     line-height: 1.5 !important;
     padding: 0px 2px 0px 2px !important;
     border-radius: 2px !important;
-    border: 1px solid var(--ayuBackground) !important;
+    border: 2px solid var(--ayuBackground) !important;
     background: var(--ayuBlue) !important;
     color: var(--ayuTextNormal) !important; /* Ensuring text is visible against the gray background */
     /* background: linear-gradient(var(--ayuPurple), #7E6399) !important; */
