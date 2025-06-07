@@ -7,13 +7,10 @@
 
 
 @font-face {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Iosevka Nerd Font Mono', monospace;
   font-style: normal;
   font-weight: 400;
-  /* font-display: swap; */
-  /* src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7DQ.woff2) format('woff2'); */
-  src: url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
-  /* unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; */
+  /* We're not specifying a src here as we expect the font to be installed on the system */
 }
 
 :root {
@@ -21,14 +18,14 @@
     --ayuTextNormal: #f4f4f4;
     --ayuTextComment: #f4f4f4;
     --ayuBackground: #161616;
-    --ayuSelection: #89b4fa;
-    --ayuBlue: #89b4fa;
+    --ayuSelection: #525252;
+    --ayuBlue: #525252;
     --ayuOrange: #fab387;
     --ayuGreen: #a6e3a1;
     --ayuPurple: #cba6f7;
 
     /* Ex-Command Line */
-    --tridactyl-font-family: 'JetBrains Mono', monospace;
+    --tridactyl-font-family: 'Iosevka Nerd Font Mono', monospace;
     --tridactyl-bg: var(--ayuBackground);
     --tridactyl-fg: var(--ayuTextNormal);
     --tridactyl-border-radius: 4px;
@@ -222,13 +219,14 @@
 
 :root span.TridactylHint {
     font-size: 12px !important;
-    font-family: monospace !important;
+    font-family: 'Iosevka Nerd Font Mono', monospace !important;
     font-weight: 800 !important;
     line-height: 1.5 !important;
     padding: 0px 2px 0px 2px !important;
-    border-radius: 3px !important;
+    border-radius: 2px !important;
     border: 1px solid var(--ayuBackground) !important;
     background: var(--ayuBlue) !important;
+    color: var(--ayuTextNormal) !important; /* Ensuring text is visible against the gray background */
     /* background: linear-gradient(var(--ayuPurple), #7E6399) !important; */
     /* background: linear-gradient(var(--ayuBlue), #479BCC) !important; */
     /* background: linear-gradient(#fcfd00, #fdb601) !important; */
